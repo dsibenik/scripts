@@ -18,5 +18,6 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias ls='ls -hl --group-directories-first --color=auto'
 alias steam='~/scripts/steamlauncher.sh'
+alias suspend='systemctl suspend'
 
 eval "$(dircolors /etc/DIR_COLORS)"
