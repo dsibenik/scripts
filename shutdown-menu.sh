@@ -115,12 +115,12 @@ if ! command_exists systemctl ; then
   menu=(
 		  [Shutdown]="systemctl poweroff"
 		    [Reboot]="systemctl reboot"
-			  [Hibernate]="s2disk && ${LOCKSCRIPT}"
-			    [Suspend]="s2ram && ${LOCKSCRIPT}"
-				  [Halt]="systemctl halt"
-				    [Lock]="${LOCKSCRIPT}"
+#			  [Hibernate]="s2disk && ${LOCKSCRIPT}"
+			    [Suspend]="systemctl suspend"
+#				  [Halt]="systemctl halt"
+#				    [Lock]="${LOCKSCRIPT}"
 					  [Logout]="i3-msg exit"
-					    [Cancel]=""
+#					    [Cancel]=""
 	   )
   menu_nrows=${#menu[@]}
 
