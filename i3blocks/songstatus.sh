@@ -3,9 +3,6 @@
 if [[ $(playerctl status) == "Playing" ]]; then
 	info=$(playerctl metadata title)
 	echo "$info"
-#	if [[ $BLOCK_BUTTON == "1" ]]; then
-#	playerctl play-pause
-#	fi
 elif [[ $(cmus-remote -Q | grep 'status') == "status playing" ]]; then
 	 artist=$(cmus-remote -Q | grep ' artist ' | cut -d ' ' -f3-)
      song=$(cmus-remote -Q | grep title | cut -d ' ' -f3-)
@@ -13,5 +10,3 @@ elif [[ $(cmus-remote -Q | grep 'status') == "status playing" ]]; then
 else 
 	echo ""
 fi
-
-

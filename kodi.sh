@@ -3,8 +3,8 @@
 
 
 # Set these to your outputs
-INT=DVI-I-1
-EXT=HDMI-0
+EXT=DVI-D-0
+INT=HDMI-0
 
 XRANDR=$(xrandr)
 if [[ -z $XRANDR ]]; then

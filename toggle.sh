@@ -3,7 +3,7 @@
 
 
 # Set these to your outputs
-INT=DVI-I-1
+INT=DVI-D-0
 EXT=HDMI-0
 
 XRANDR=$(xrandr)
