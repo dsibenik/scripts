@@ -71,6 +71,6 @@ case $BLOCK_BUTTON in
 			icon=${state_icons["generic"]}
 			fi
 
-			echo "$icon  $temp"
-			echo "$icon  $temp"
+			echo "  $icon  $temp  "
+			echo "  $icon  $temp  "
 			echo
