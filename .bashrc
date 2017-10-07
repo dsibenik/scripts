@@ -7,7 +7,7 @@
 
 alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
-export PS1="[\[\e[31m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[35m\]\w\[\e[m\]]: "
+export PS1="[\[\e[91m\]\u\[\e[m\]\[\e[97m\]@\[\e[m\]\[\e[97m\]\h\[\e[m\] \[\e[35m\]\w\[\e[m\]]: "
 export PATH="${PATH}:/home/dsibenik/Desktop/"
 
 #export GTK_CSD=0
@@ -25,5 +25,6 @@ alias suspend='systemctl suspend'
 alias kodi='~/scripts/kodi.sh'
 alias mocp='mocp -m'
 alias ss='scrot -s'
+alias ync='yaourt --noconfirm'
 
 eval "$(dircolors /etc/DIR_COLORS)"

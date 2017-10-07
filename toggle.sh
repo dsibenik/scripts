@@ -3,8 +3,8 @@
 
 
 # Set these to your outputs
-INT=DVI-D-0
-EXT=HDMI-0
+INT=DP-1
+EXT=DVI-D-0
 
 XRANDR=$(xrandr)
 if [[ -z $XRANDR ]]; then
@@ -29,10 +29,10 @@ EXT_STATE=$(get_state $EXT)
 if [[ $INT_STATE = "on" && $EXT_STATE = "off" ]]; then
     # Switch to mirror
     xrandr --output $EXT --auto
-    xrandr --output HDMI-0 --right-of DVI-I-1
+    xrandr --output $EXT --right-of $INT
 elif [[ $INT_STATE = "on" && $EXT_STATE = "on" ]]; then
     # Switch to external only
-    xrandr --output $INT --off
+    xrandr --output $INT --off --output $EXT --auto
 else 
     # Switch to internal only
     xrandr --output $INT --auto --output $EXT --off
